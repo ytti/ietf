@@ -49,7 +49,7 @@
    <!-- The abbreviated title is used in the page header - it is only necessary if the 
         full title is longer than 39 characters -->
 
-   <title>TFTP Block Bollover Option</title>
+   <title>TFTP Block Number Rollover Option</title>
 
    <!-- add 'role="editor"' below for the editors if appropriate -->
 
@@ -136,15 +136,16 @@
    <abstract>
      <t>
        The Trivial File Transfer Protocol or TFTP <xref target="RFC1350">RFC
-         1350</xref> is a simple lock-step file transfer protocol. TFTP is
-       used when implementation simplicity is crucial or when resources are
+         1350</xref> is a simple lock-step file transfer protocol. TFTP is used
+       when implementation simplicity is crucial or when resources are
        constrained. Unfortunately TFTP imposes limit on file size by requiring
-       unique block number of 0x0 through 0xfffff for each block transferred.
+       unique, non-repeating block number of 0x0 through 0xfffff for each block
+       transferred.
      </t>
      <t>
        This documment describes TFTP option which allows the client and server
-       to negotiate a block rollover functionality, enabling TFTP to transfer
-       abrbitrarily large files.
+       to negotiate a block number rollover functionality, enabling TFTP to
+       transfer abrbitrarily large files.
      </t>
    </abstract>
  </front>
