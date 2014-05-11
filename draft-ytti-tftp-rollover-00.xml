@@ -137,7 +137,7 @@
      <t>
        The Trivial File Transfer Protocol or TFTP <xref target="RFC1350">RFC
          1350</xref> is a simple lock-step, file transfer protocol. TFTP is
-       used when implementation simplicity is crucial or when resource are
+       used when implementation simplicity is crucial or when resources are
        constrained. Unfortunately TFTP imposes limit on file size by requiring
        unique block number of 0x0 through 0xfffff for each block transferred.
      </t>
