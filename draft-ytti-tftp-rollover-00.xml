@@ -135,14 +135,16 @@
 
    <abstract>
      <t>
-       TFTP rfc1350 Internet Standard can only support transfers of finite size
-       files, as file can only ontain 0x0 through 0xffff blocks.
-       Most implmenentations today use non-standard way to rollover from block
-       0xffff to 0x0 or in some special applications to 0x01.
-       This standard attemtps to standardize the behavior.
+       The Trivial File Transfer Protocol or TFTP <xref target="RFC1350">RFC
+         1350</xref> is a simple lock-step, file transfer protocol. TFTP is
+       used when implementation simplicity is crucial or when resource are
+       constrained. Unfortunately TFTP imposes limit on file size by requiring
+       unique block number of 0x0 through 0xfffff for each block transferred.
      </t>
      <t>
-       This specification defines TFTP functionalty for block number rollover.
+       This documment describes TFTP option which allows the client and server
+       to negotiate a block rollover functionality, enabling TFTP to transfer
+       abrbitrarily large files.
      </t>
    </abstract>
  </front>
