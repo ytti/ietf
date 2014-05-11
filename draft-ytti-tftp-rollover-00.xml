@@ -55,7 +55,7 @@
 
    <!-- Another author who claims to be an editor -->
 
-   <author fullname="Saku Ytti" initials="S.Y." role="editor"
+   <author fullname="Saku Ytti" initials="S."
            surname="Ytti">
      <organization>TDC Oy</organization>
 
@@ -80,7 +80,7 @@
      </address>
    </author>
 
-   <author fullname="Job Snijders" initials="J.S." role="editor"
+   <author fullname="Job Snijders" initials="J."
            surname="Snijders">
      <organization>Independent</organization>
 
