@@ -2,9 +2,9 @@
 
 
 
-Internet Engineering Task Force                             S. Ytti, Ed.
+Internet Engineering Task Force                                  S. Ytti
 Internet-Draft                                                    TDC Oy
-Intended status: Informational                          J. Snijders, Ed.
+Intended status: Informational                               J. Snijders
 Expires: November 12, 2014                                   Independent
                                                             May 11, 2014
 
@@ -317,13 +317,13 @@ Appendix A.  Additional Stuff
 
 Authors' Addresses
 
-   Saku Ytti (editor)
+   Saku Ytti
    TDC Oy
 
    Email: saku@ytti.fi
 
 
-   Job Snijders (editor)
+   Job Snijders
    Independent
    Theodorus Majofskistraat 10
    Amsterdam  1065 SZ
