@@ -8,7 +8,6 @@
 
 <!ENTITY RFC1350 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1350.xml">
 <!ENTITY RFC2119 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
-<!ENTITY RFC2629 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2629.xml">
 <!ENTITY RFC3552 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3552.xml">
 <!ENTITY RFC5226 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5226.xml">
 ]>
@@ -370,25 +369,10 @@ main(int argc, char *argv[])
      <!--?rfc include="http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml"?-->
      &RFC2119;
 
-     <reference anchor="min_ref">
-       <!-- the following is the minimum to make xml2rfc happy -->
-
-       <front>
-         <title>Minimal Reference</title>
-
-         <author initials="authInitials" surname="authSurName">
-           <organization></organization>
-         </author>
-
-         <date year="2006" />
-       </front>
-     </reference>
    </references>
 
    <references title="Informative References">
      <!-- Here we use entities that we defined at the beginning. -->
-
-     &RFC2629;
 
      &RFC3552;
 

@@ -9,7 +9,7 @@ Expires: November 12, 2014                                   Independent
                                                             May 11, 2014
 
 
-                       TFTP Block Bollover Option
+                   TFTP Block Number Rollover Option
                       draft-ytti-tftp-rollover-00
 
 Abstract
@@ -18,12 +18,12 @@ Abstract
    simple lock-step file transfer protocol.  TFTP is used when
    implementation simplicity is crucial or when resources are
    constrained.  Unfortunately TFTP imposes limit on file size by
-   requiring unique block number of 0x0 through 0xfffff for each block
-   transferred.
+   requiring unique, non-repeating block number of 0x0 through 0xfffff
+   for each block transferred.
 
    This documment describes TFTP option which allows the client and
-   server to negotiate a block rollover functionality, enabling TFTP to
-   transfer abrbitrarily large files.
+   server to negotiate a block number rollover functionality, enabling
+   TFTP to transfer abrbitrarily large files.
 
 Status of This Memo
 
@@ -55,7 +55,7 @@ Copyright Notice
 
 Ytti & Snijders         Expires November 12, 2014               [Page 1]
 
-Internet-Draft         TFTP Block Bollover Option               May 2014
+Internet-Draft      TFTP Block Number Rollover Option           May 2014
 
 
    publication of this document.  Please review these documents
@@ -111,7 +111,7 @@ Table of Contents
 
 Ytti & Snijders         Expires November 12, 2014               [Page 2]
 
-Internet-Draft         TFTP Block Bollover Option               May 2014
+Internet-Draft      TFTP Block Number Rollover Option           May 2014
 
 
    By default 3 levels of nesting show in table of contents but that can
@@ -167,7 +167,7 @@ Internet-Draft         TFTP Block Bollover Option               May 2014
 
 Ytti & Snijders         Expires November 12, 2014               [Page 3]
 
-Internet-Draft         TFTP Block Bollover Option               May 2014
+Internet-Draft      TFTP Block Number Rollover Option           May 2014
 
 
 4.1.  Numbering Lists across Lists and Sections
@@ -223,7 +223,7 @@ Internet-Draft         TFTP Block Bollover Option               May 2014
 
 Ytti & Snijders         Expires November 12, 2014               [Page 4]
 
-Internet-Draft         TFTP Block Bollover Option               May 2014
+Internet-Draft      TFTP Block Number Rollover Option           May 2014
 
 
    piece of valid Augmented Backus-Naur Format (ABNF) grammar.  This
@@ -279,7 +279,7 @@ Internet-Draft         TFTP Block Bollover Option               May 2014
 
 Ytti & Snijders         Expires November 12, 2014               [Page 5]
 
-Internet-Draft         TFTP Block Bollover Option               May 2014
+Internet-Draft      TFTP Block Number Rollover Option           May 2014
 
 
 8.  Security Considerations
@@ -297,16 +297,11 @@ Internet-Draft         TFTP Block Bollover Option               May 2014
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997.
 
-   [min_ref]  authSurName, authInitials., "Minimal Reference", 2006.
-
 9.2.  Informative References
 
    [DOMINATION]
               Mad Dominators, Inc., "Ultimate Plan for Taking Over the
               World", 1984, <http://www.example.com/dominator.html>.
-
-   [RFC2629]  Rose, M., "Writing I-Ds and RFCs using XML", RFC 2629,
-              June 1999.
 
    [RFC3552]  Rescorla, E. and B. Korver, "Guidelines for Writing RFC
               Text on Security Considerations", BCP 72, RFC 3552, July
@@ -328,16 +323,6 @@ Authors' Addresses
    Email: saku@ytti.fi
 
 
-
-
-
-
-
-Ytti & Snijders         Expires November 12, 2014               [Page 6]
-
-Internet-Draft         TFTP Block Bollover Option               May 2014
-
-
    Job Snijders
    Independent
    Theodorus Majofskistraat 10
@@ -348,45 +333,4 @@ Internet-Draft         TFTP Block Bollover Option               May 2014
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Ytti & Snijders         Expires November 12, 2014               [Page 7]
+Ytti & Snijders         Expires November 12, 2014               [Page 6]
