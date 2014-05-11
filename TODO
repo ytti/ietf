@@ -1,0 +1,16 @@
+TODO
+====
+
+example implementation
+----------------------
+
+Reference implmentation can be OpenBSD
+
+files that need updating:
+
+    src/sys/lib/libsa/tftp.c
+    src/usr.bin/tftp/tftp.c
+    src/usr.sbin/tftp-proxy/tftp-proxy.c
+    src/usr.sbin/tftpd/tftpd.c
+
+
