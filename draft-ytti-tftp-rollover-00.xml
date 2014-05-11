@@ -80,6 +80,32 @@
      </address>
    </author>
 
+   <author fullname="Job Snijders" initials="J.S." role="editor"
+           surname="Snijders">
+     <organization>Independent</organization>
+
+     <address>
+       <postal>
+         <street>Theodorus Majofskistraat 10</street>
+
+         <!-- Reorder these if your country does things differently -->
+
+         <city>Amsterdam</city>
+
+         <region></region>
+
+         <code>1065 SZ</code>
+
+         <country>NL</country>
+       </postal>
+
+       <email>job@instituut.net</email>
+
+       <!-- uri and facsimile elements may also be added -->
+     </address>
+   </author>
+
+
    <date year="2014" />
 
    <!-- If the month and year are both specified and are the current ones, xml2rfc will fill 
