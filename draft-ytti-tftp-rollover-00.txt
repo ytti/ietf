@@ -9,19 +9,21 @@ Expires: November 12, 2014                                   Independent
                                                             May 11, 2014
 
 
-                          TFTP Block rollover
+                       TFTP Block Bollover Option
                       draft-ytti-tftp-rollover-00
 
 Abstract
 
-   TFTP rfc1350 Internet Standard can only support transfers of finite
-   size files, as file can only ontain 0x0 through 0xffff blocks.  Most
-   implmenentations today use non-standard way to rollover from block
-   0xffff to 0x0 or in some special applications to 0x01.  This standard
-   attemtps to standardize the behavior.
+   The Trivial File Transfer Protocol or TFTP RFC 1350 [RFC1350] is a
+   simple lock-step file transfer protocol.  TFTP is used when
+   implementation simplicity is crucial or when resources are
+   constrained.  Unfortunately TFTP imposes limit on file size by
+   requiring unique block number of 0x0 through 0xfffff for each block
+   transferred.
 
-   This specification defines TFTP functionalty for block number
-   rollover.
+   This documment describes TFTP option which allows the client and
+   server to negotiate a block rollover functionality, enabling TFTP to
+   transfer abrbitrarily large files.
 
 Status of This Memo
 
@@ -48,16 +50,16 @@ Copyright Notice
    This document is subject to BCP 78 and the IETF Trust's Legal
    Provisions Relating to IETF Documents
    (http://trustee.ietf.org/license-info) in effect on the date of
-   publication of this document.  Please review these documents
-   carefully, as they describe your rights and restrictions with respect
 
 
 
 Ytti & Snijders         Expires November 12, 2014               [Page 1]
 
-Internet-Draft             TFTP Block rollover                  May 2014
+Internet-Draft         TFTP Block Bollover Option               May 2014
 
 
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
    include Simplified BSD License text as described in Section 4.e of
    the Trust Legal Provisions and are provided without warranty as
@@ -72,12 +74,12 @@ Table of Contents
      3.1.  A Subsection  . . . . . . . . . . . . . . . . . . . . . .   2
      3.2.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . .   3
    4.  More about Lists  . . . . . . . . . . . . . . . . . . . . . .   3
-     4.1.  Numbering Lists across Lists and Sections . . . . . . . .   3
+     4.1.  Numbering Lists across Lists and Sections . . . . . . . .   4
      4.2.  Where the List Numbering Continues  . . . . . . . . . . .   4
    5.  Example of Code or MIB Module To Be Extracted . . . . . . . .   4
    6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   5
    7.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
-   8.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
+   8.  Security Considerations . . . . . . . . . . . . . . . . . . .   6
    9.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   6
      9.1.  Normative References  . . . . . . . . . . . . . . . . . .   6
      9.2.  Informative References  . . . . . . . . . . . . . . . . .   6
@@ -104,15 +106,16 @@ Table of Contents
 
 3.1.  A Subsection
 
-   By default 3 levels of nesting show in table of contents but that can
-   be adjusted with the value of the "tocdepth" processing instruction.
 
 
 
 Ytti & Snijders         Expires November 12, 2014               [Page 2]
 
-Internet-Draft             TFTP Block rollover                  May 2014
+Internet-Draft         TFTP Block Bollover Option               May 2014
 
+
+   By default 3 levels of nesting show in table of contents but that can
+   be adjusted with the value of the "tocdepth" processing instruction.
 
 3.2.  Tables
 
@@ -158,17 +161,16 @@ Internet-Draft             TFTP Block rollover                  May 2014
       The quick, brown fox jumped over the lazy dog and lived to fool
       many another hunter in the great wood in the west.
 
-4.1.  Numbering Lists across Lists and Sections
-
-
 
 
 
 
 Ytti & Snijders         Expires November 12, 2014               [Page 3]
 
-Internet-Draft             TFTP Block rollover                  May 2014
+Internet-Draft         TFTP Block Bollover Option               May 2014
 
+
+4.1.  Numbering Lists across Lists and Sections
 
    Numbering items continuously although they are in separate <list>
    elements, maybe in separate sections using the "format" style and a
@@ -216,16 +218,16 @@ Internet-Draft             TFTP Block rollover                  May 2014
    nroff outputs (see the xml2rfc README for details).  It also has a
    "type" attribute.  This is currently ignored except in the case
    'type="abnf"'.  In this case the "artwork" is expected to contain a
-   piece of valid Augmented Backus-Naur Format (ABNF) grammar.  This
-   will be syntax checked by xml2rfc and any errors will cause a fatal
 
 
 
 Ytti & Snijders         Expires November 12, 2014               [Page 4]
 
-Internet-Draft             TFTP Block rollover                  May 2014
+Internet-Draft         TFTP Block Bollover Option               May 2014
 
 
+   piece of valid Augmented Backus-Naur Format (ABNF) grammar.  This
+   will be syntax checked by xml2rfc and any errors will cause a fatal
    error if the "strict" processing instruction is set to "yes".  The
    ABNF will also be colorized in HTML output to highlight the syntactic
    components.  Checking of additional "types" may be provided in future
@@ -271,16 +273,16 @@ Internet-Draft             TFTP Block rollover                  May 2014
    case (as above).  If there are no requirements for IANA, the section
    will be removed during conversion into an RFC by the RFC Editor.
 
-8.  Security Considerations
-
 
 
 
 
 Ytti & Snijders         Expires November 12, 2014               [Page 5]
 
-Internet-Draft             TFTP Block rollover                  May 2014
+Internet-Draft         TFTP Block Bollover Option               May 2014
 
+
+8.  Security Considerations
 
    All drafts are required to have a security considerations section.
    See RFC 3552 [RFC3552] for a guide.
@@ -288,6 +290,9 @@ Internet-Draft             TFTP Block rollover                  May 2014
 9.  References
 
 9.1.  Normative References
+
+   [RFC1350]  Sollins, K., "The TFTP Protocol (Revision 2)", STD 33, RFC
+              1350, July 1992.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997.
@@ -323,6 +328,16 @@ Authors' Addresses
    Email: saku@ytti.fi
 
 
+
+
+
+
+
+Ytti & Snijders         Expires November 12, 2014               [Page 6]
+
+Internet-Draft         TFTP Block Bollover Option               May 2014
+
+
    Job Snijders
    Independent
    Theodorus Majofskistraat 10
@@ -333,4 +348,45 @@ Authors' Addresses
 
 
 
-Ytti & Snijders         Expires November 12, 2014               [Page 6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ytti & Snijders         Expires November 12, 2014               [Page 7]
